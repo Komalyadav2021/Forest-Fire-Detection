@@ -12,9 +12,4 @@ A deep learning-based system for detecting forest fires using image data. This p
 - **NumPy / Pandas**: Data manipulation and preparation
 - **Matplotlib**: Visualization of model performance
 
----
-
-## 🗂️ Dataset Structure
-
-The dataset should follow this directory structure:
 
