@@ -2,6 +2,7 @@ import os
 import cv2
 import numpy as np
 from flask import Flask, request, jsonify, render_template
+from flask_cors import CORS
 from tensorflow.keras.models import load_model
 from tensorflow.keras.layers import InputLayer
 import logging
@@ -12,6 +13,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
+CORS(app) 
 
 # Load the trained model
 logger.info("Loading model...")
